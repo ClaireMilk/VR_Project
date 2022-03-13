@@ -12,6 +12,7 @@ public class Light_sword_control : MonoBehaviour
 
     [Header("gameobject blade")]
     public GameObject game_obj_blade;
+    public GameObject game_obj_blade_2;
 
     [Header("gameobject slash")]
     public GameObject game_obj_slash;
@@ -32,6 +33,7 @@ public class Light_sword_control : MonoBehaviour
     {
         //set color
         this.game_obj_blade.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor",this.color_sword);
+        this.game_obj_blade_2.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", this.color_sword);
 
         float factor = Mathf.Pow(2, -0.85f);
         Color color = new Color(color_sword.r * factor, color_sword.g * factor, color_sword.b * factor);
@@ -55,12 +57,15 @@ public class Light_sword_control : MonoBehaviour
         if (this.is_growing)
         {
             float scale_z = this.game_obj_blade.transform.localScale.z;
+            float scale_z_2 = this.game_obj_blade_2.transform.localScale.z;
 
             scale_z = Mathf.Lerp(scale_z, 1f, Time.deltaTime * this.speed_grow);
+            scale_z_2 = Mathf.Lerp(scale_z_2, 1f, Time.deltaTime * this.speed_grow);
 
             this.game_obj_blade.transform.localScale = new Vector3(1, 1, scale_z);
+            this.game_obj_blade_2.transform.localScale = new Vector3(1, 1, scale_z_2);
 
-            if (scale_z > 0.99f)
+            if (scale_z > 0.99f && scale_z_2 > 0.99f)
             {
                 this.is_growing = false;
 
@@ -71,12 +76,15 @@ public class Light_sword_control : MonoBehaviour
         {
 
             float scale_z = this.game_obj_blade.transform.localScale.z;
+            float scale_z_2 = this.game_obj_blade_2.transform.localScale.z;
 
             scale_z = Mathf.Lerp(scale_z, -0.1f, Time.deltaTime * this.speed_grow);
+            scale_z_2 = Mathf.Lerp(scale_z_2, -0.1f, Time.deltaTime * this.speed_grow);
 
             this.game_obj_blade.transform.localScale = new Vector3(1, 1, scale_z);
+            this.game_obj_blade_2.transform.localScale = new Vector3(1, 1, scale_z_2);
 
-            if (scale_z < -0.01f)
+            if (scale_z < -0.01f && scale_z_2 < -0.01f)
             {
                 this.is_retarcting = false;
             }
@@ -89,8 +97,10 @@ public class Light_sword_control : MonoBehaviour
         if (this.is_growing || this.is_retarcting)
             return;
 
-        if (this.game_obj_blade.transform.localScale.z > 0.99f)
+        if (this.game_obj_blade.transform.localScale.z > 0.99f || this.game_obj_blade_2.transform.localScale.z > 0.99f)
             return;
+
+
 
         this.game_obj_slash.SetActive(false);
 
@@ -105,8 +115,9 @@ public class Light_sword_control : MonoBehaviour
         if (this.is_growing || this.is_retarcting)
             return;
 
-        if (this.game_obj_blade.transform.localScale.z < -0.01f)
+        if (this.game_obj_blade.transform.localScale.z < -0.01f || this.game_obj_blade_2.transform.localScale.z < -0.01f)
             return;
+
 
         this.game_obj_slash.SetActive(false);
 
