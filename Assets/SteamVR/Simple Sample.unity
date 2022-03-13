@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 424189919}
   - component: {fileID: 424189918}
   - component: {fileID: 424189917}
+  - component: {fileID: 424189920}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -277,6 +278,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424189915}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &424189920
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424189915}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &443795804
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +402,7 @@ GameObject:
   - component: {fileID: 530207999}
   - component: {fileID: 530207998}
   - component: {fileID: 530207997}
+  - component: {fileID: 530208000}
   m_Layer: 0
   m_Name: Capsule (4)
   m_TagString: Untagged
@@ -470,6 +488,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530207995}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &530208000
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530207995}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &542585468 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 125964, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -520,6 +554,7 @@ GameObject:
   - component: {fileID: 686753380}
   - component: {fileID: 686753379}
   - component: {fileID: 686753378}
+  - component: {fileID: 686753381}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -605,6 +640,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686753376}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &686753381
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686753376}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &794124718
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +764,7 @@ GameObject:
   - component: {fileID: 806920100}
   - component: {fileID: 806920099}
   - component: {fileID: 806920098}
+  - component: {fileID: 806920101}
   m_Layer: 0
   m_Name: Capsule (3)
   m_TagString: Untagged
@@ -798,6 +850,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806920096}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &806920101
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806920096}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &873467885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -867,6 +935,7 @@ GameObject:
   - component: {fileID: 1066138774}
   - component: {fileID: 1066138773}
   - component: {fileID: 1066138772}
+  - component: {fileID: 1066138775}
   m_Layer: 0
   m_Name: Capsule (6)
   m_TagString: Untagged
@@ -952,6 +1021,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066138770}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1066138775
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066138770}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1118019862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1021,6 +1106,7 @@ GameObject:
   - component: {fileID: 1369313165}
   - component: {fileID: 1369313164}
   - component: {fileID: 1369313163}
+  - component: {fileID: 1369313166}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -1106,6 +1192,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369313161}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1369313166
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369313161}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1379597367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1302,7 @@ GameObject:
   - component: {fileID: 1403776310}
   - component: {fileID: 1403776309}
   - component: {fileID: 1403776308}
+  - component: {fileID: 1403776311}
   m_Layer: 0
   m_Name: Capsule (5)
   m_TagString: Untagged
@@ -1285,6 +1388,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403776306}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1403776311
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403776306}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1434515350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4770062407205432572, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
@@ -1686,6 +1805,7 @@ GameObject:
   - component: {fileID: 1741088067}
   - component: {fileID: 1741088066}
   - component: {fileID: 1741088065}
+  - component: {fileID: 1741088068}
   m_Layer: 0
   m_Name: Capsule (7)
   m_TagString: Untagged
@@ -1771,6 +1891,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741088063}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1741088068
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741088063}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1976543659
 GameObject:
   m_ObjectHideFlags: 0
