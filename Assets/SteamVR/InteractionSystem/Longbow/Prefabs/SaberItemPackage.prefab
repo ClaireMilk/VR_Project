@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saber
-  packageType: 2
+  packageType: 1
   itemPrefab: {fileID: 5294397871047374406, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
-  otherHandItemPrefab: {fileID: 5294397871047374406, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
+  otherHandItemPrefab: {fileID: 0}
   previewPrefab: {fileID: 5294397871047374406, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
   fadedPreviewPrefab: {fileID: 5294397871047374406, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
