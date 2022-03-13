@@ -882,7 +882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066138770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.89, y: 20.19, z: -108.10755}
+  m_LocalPosition: {x: 6.89, y: 20.19, z: -110.561}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1615079071}
@@ -1133,7 +1133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403776306}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.94, y: 20.19, z: -108.10755}
+  m_LocalPosition: {x: 8.061, y: 20.19, z: -110.576}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1615079071}
@@ -1735,7 +1735,7 @@ GameObject:
   - component: {fileID: 2108607768}
   - component: {fileID: 2108607767}
   m_Layer: 0
-  m_Name: BowPickup
+  m_Name: SaberPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
