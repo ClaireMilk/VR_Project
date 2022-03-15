@@ -408,6 +408,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4770062407205432572, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770062407205432572, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -417,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4770062407205432572, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.037
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4770062407205432572, guid: 9441d2a774a6c964b9b8f658a6436414, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1594,6 +1598,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 171246, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2761,10 +2773,10 @@ MonoBehaviour:
   _itemPackage: {fileID: 11450054, guid: 9d7f8f07a9de6764b9b93597f2866037, type: 3}
   useItemPackagePreview: 1
   requireGrabActionToTake: 1
-  requireReleaseActionToReturn: 0
+  requireReleaseActionToReturn: 1
   showTriggerHint: 1
-  attachmentFlags: -23
-  takeBackItem: 1
+  attachmentFlags: 2147483647
+  takeBackItem: 0
   acceptDifferentItems: 0
   pickupEvent:
     m_PersistentCalls:
@@ -2772,7 +2784,7 @@ MonoBehaviour:
   dropEvent:
     m_PersistentCalls:
       m_Calls: []
-  justPickedUpItem: 0
+  justPickedUpItem: 1
 --- !u!114 &2108607769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2833,7 +2845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108607766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.42, y: 1.26, z: 3.16}
+  m_LocalPosition: {x: -0.339, y: 1.26, z: 3.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1434515350}
