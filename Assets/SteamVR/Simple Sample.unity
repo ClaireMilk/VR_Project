@@ -295,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bce93f88a5ed57448029742e8fac5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startSpeed: 2
 --- !u!1 &91638886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,7 +1170,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000010777624494, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
       propertyPath: m_Name
-      value: Throwable (Newton)
+      value: Saber 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000011633437892, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
       propertyPath: m_RootOrder
@@ -2947,7 +2948,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000010777624494, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
       propertyPath: m_Name
-      value: Throwable (Newton) (1)
+      value: Saber 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000011633437892, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
       propertyPath: m_RootOrder
