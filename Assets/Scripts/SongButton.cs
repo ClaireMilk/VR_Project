@@ -7,12 +7,18 @@ public class SongButton : MonoBehaviour
     MeshRenderer mr;
 
     float timer;
+
     public float goodTimeRange;
     public float excellentTimeRange;
     public float perfectTimeRange;
 
+    public float goodSpeed;
+    public float excellentSpeed;
+
+
     public enum State { good, excellent, perfect }
-    public State state;
+    public State timeState;
+    public State speedState;
 
     // Start is called before the first frame update
     void Start()
@@ -28,35 +34,35 @@ public class SongButton : MonoBehaviour
 
         if (timer < goodTimeRange)
         {
-            state = State.good;
+            timeState = State.good;
             mr.material.color = Color.green;
         }
 
-        if (timer >= goodTimeRange && timer < goodTimeRange + excellentTimeRange)
+        else if (timer >= goodTimeRange && timer < goodTimeRange + excellentTimeRange)
         {
-            state = State.excellent;
+            timeState = State.excellent;
             mr.material.color = Color.yellow;
         }
 
-        if (timer >= goodTimeRange + excellentTimeRange && timer < goodTimeRange + excellentTimeRange + 2 * perfectTimeRange)
+        else if (timer >= goodTimeRange + excellentTimeRange && timer < goodTimeRange + excellentTimeRange + 2 * perfectTimeRange)
         {
-            state = State.perfect;
+            timeState = State.perfect;
             mr.material.color = Color.red;
         }
 
-        if (timer >= goodTimeRange + excellentTimeRange + 2 * perfectTimeRange && timer < goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange)
+        else if (timer >= goodTimeRange + excellentTimeRange + 2 * perfectTimeRange && timer < goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange)
         {
-            state = State.excellent;
+            timeState = State.excellent;
             mr.material.color = Color.yellow;
         }
 
-        if (timer >= goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange && timer < 2 * goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange)
+        else if (timer >= goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange && timer < 2 * goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange)
         {
-            state = State.good;
+            timeState = State.good;
             mr.material.color = Color.green;
         }
 
-        if (timer >= (goodTimeRange + excellentTimeRange + perfectTimeRange) * 2)
+        else if (timer >= (goodTimeRange + excellentTimeRange + perfectTimeRange) * 2)
         {
             Debug.Log("Missed!");
             Destroy(gameObject);
@@ -66,7 +72,29 @@ public class SongButton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            switch (state)
+            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+
+            if (rb.velocity.y < 0)
+            {
+                if (rb.velocity.magnitude < goodSpeed)
+                {
+                    speedState = State.good;
+                }
+
+                else if (rb.velocity.magnitude >= goodSpeed && rb.velocity.magnitude < excellentSpeed)
+                {
+                    speedState = State.excellent;
+                }
+
+                else if (rb.velocity.magnitude >= excellentSpeed)
+                {
+                    speedState = State.excellent;
+                }
+            }
+
+            State finalState = (State)Mathf.Max((int)timeState, (int)speedState);
+
+            switch (finalState)
             {
                 case State.good:
                     Debug.Log("Good!");

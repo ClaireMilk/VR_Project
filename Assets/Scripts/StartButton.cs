@@ -4,20 +4,10 @@ using UnityEngine;
 
 public class StartButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public float startSpeed;
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<Rigidbody>().velocity.y < 0 && collision.gameObject.GetComponent<Rigidbody>().velocity.magnitude > startSpeed)
         {
             transform.parent.transform.parent.GetComponent<Animator>().Play("SongTest");
             transform.parent.gameObject.SetActive(false);
