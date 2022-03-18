@@ -92,7 +92,7 @@ public class SongButton : MonoBehaviour
                 }
             }
 
-            State finalState = (State)Mathf.Max((int)timeState, (int)speedState);
+            State finalState = (State)Mathf.Min((int)timeState, (int)speedState);
 
             switch (finalState)
             {
